@@ -7,7 +7,7 @@
     <title>Produtos</title>
 </head>
 <body>
-    <h1>Detalhes do produto</h1>
+    <h1>Detalhes do produto veja seu pé</h1>
     <h3> {{ $product->name}} </h3>
     <p> {{ $product->description}} </p>
     <p> R${{ number_format($product->price, 2, ',', '.') }} </p>
