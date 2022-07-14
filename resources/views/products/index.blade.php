@@ -12,7 +12,10 @@
 
     <ul>
         @foreach ($products as $product)
-            <li>{{ $product->name }} - R${{ $product->price }} - {{ $product->description}}</li>
+            <li>
+                {{ $product->name }} - R${{ number_format($product->price, 2, ',', '.') }} - {{ $product->description}}
+                <a href="/products/show/{{ $product->id }}"> Ver mais</a>
+            </li>
         @endforeach
     </ul>
 </body>
